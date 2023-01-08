@@ -59,7 +59,7 @@ export default calculator = () => {
 
       <View style = {myStyles.numberContiner}>
         <View style={myStyles.numberRowContainer}>
-            <TouchableOpacity style = {myStyles.numericActions}><Text style = {myStyles.text}>/</Text></TouchableOpacity>
+            <TouchableOpacity style = {myStyles.numericActions}  onPress={() => setCalculations(calculations + '/')}><Text style = {myStyles.text}>/</Text></TouchableOpacity>
             <TouchableOpacity style = {myStyles.btn}onPress={() => setCalculations(calculations + '%')}><Text style = {myStyles.text}>%</Text></TouchableOpacity>
             <TouchableOpacity style = {myStyles.btn}><Text><Feather name = "delete" size = {24} /></Text></TouchableOpacity>
             <TouchableOpacity style = {myStyles.btn} onPress={() => {setCalculations(""); setResult("")}}><Text style = {myStyles.text}>AC</Text></TouchableOpacity>
